@@ -33,12 +33,31 @@
 /***** Objekte 1 Daten/Funktionen *******/
 
 
+let person = {
+                firstName: "Bashkim", 
+                familyName: "Dauti",
+                salary: [120000,160000],
+                permission: true,
+                sayHello: function (permission){
+                    return "Hallo, " + person.firstName +"!";
+                }
+            
 
 
+};
 
+output(person);
+output(person["firstName"]);
+output(person.familyName);
+output(person.salary[0]);
+output(person.permission);
+output(person.sayHello());
 
+const text = "ich bin "+ person.firstName + " und verdiene "+ person.salary[1] + "p.a.";
+output(text);
 
 /** Ausgabe */
 function output(outputData) {
     console.log(outputData);
+
 }
